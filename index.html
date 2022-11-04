@@ -40,7 +40,7 @@
     <!-- Naavigation -->
     <nav class="navbar navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="/">Volodia</a>
+        <a class="navbar-brand" href="/">Shop</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -50,6 +50,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div
           class="offcanvas offcanvas-end text-bg-dark"
           tabindex="-1"
@@ -72,8 +73,27 @@
                   >Home page</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Link</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Hot SALES
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a class="dropdown-item" href="#">Unteresting offfer</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Promo code</a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -83,16 +103,39 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  Сlothes
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Men</a></li>
+                  <li><a class="dropdown-item" href="#">Women</a></li>
                   <li>
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">UNISEX</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Brends
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">nem chsool</a></li>
+                  <li><a class="dropdown-item" href="#">old chsool</a></li>
+                  <li><a class="dropdown-item" href="#">hip-hop</a></li>
+                  <li><a class="dropdown-item" href="#">perfomance</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Top of the top</a>
                   </li>
                 </ul>
               </li>
@@ -104,7 +147,9 @@
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn btn-success" type="submit">Search</button>
+              <button class="btn btn-success" type="submit">
+                brends, clothes or cod word
+              </button>
             </form>
           </div>
         </div>
@@ -112,217 +157,263 @@
     </nav>
     <!-- Naavigation end -->
 
-    <div class="container my-5">
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
-        <div class="col">
-          <div class="card">
-            <!-- 57 - 'это id номер с сайта, 300 - это размер в пикселях' -->
-            <img
-              src="https://picsum.photos/id/57/900"
-              class="card-img-top"
-              alt="My image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Street in new town</h5>
-              <p class="card-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non
-                itaque illo facilis, inventore nostrum rem nobis vel et
-                assumenda iure.
-              </p>
-              <a
-                href="https://picsum.photos/id/57/900"
-                target="_blank"
-                class="btn btn-primary"
-                >Go large</a
-              >
+    <main>
+      <header>
+        <div
+          class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-rigth bg-light"
+        >
+          <div class="container text-center">
+            <div class="row align-items-start">
+              <div class="col-md-6 p-lg-5 my-5">
+                <h3 class="display-4 fw-normal">Opinion about compan</h3>
+                <p class="lead fw-normal">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Itaque vitae mollitia exercitationem molestiae laudantium fuga
+                  animi perspiciatis autem debitis ad.
+                </p>
+                <a
+                  class="btn btn-outline-secondary"
+                  href="info-folder/info.html"
+                  target="_blank"
+                  >Read morer</a
+                >
+              </div>
+
+              <div class="col-md-6 p-lg-5 my-5">
+                <img
+                  src="https://picsum.photos/id/57/900"
+                  class="card-img-top"
+                  alt="My image"
+                />
+              </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="https://picsum.photos/id/49/900"
-              class="card-img-top"
-              alt="My image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Country on big hill</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-                asperiores nisi quo quasi deserunt esse, commodi tempore
-                debitis, earum ratione animi.
-              </p>
-              <a
-                href="https://picsum.photos/id/49/1500"
-                target="_blank"
-                class="btn btn-primary"
-                >Go large</a
-              >
+      </header>
+
+      <!-- Space for cards -->
+      <div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+          <div class="col">
+            <div class="card">
+              <!-- 57 - 'это id номер с сайта, 300 - это размер в пикселях' -->
+              <img
+                src="https://picsum.photos/id/57/900"
+                class="card-img-top"
+                alt="My image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Street in new town</h5>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non
+                  itaque illo facilis, inventore nostrum rem nobis vel et
+                  assumenda iure.
+                </p>
+                <div class="text-center">
+                  <a
+                    href="https://picsum.photos/id/57/900"
+                    target="_blank"
+                    class="btn btn-primary"
+                    d-md-block
+                    >Go large</a
+                  >
+                  <a
+                    href="https://picsum.photos/id/57/900"
+                    target="_blank"
+                    class="btn btn-secondary"
+                    >Go large</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="https://picsum.photos/id/42/900"
-              class="card-img-top"
-              alt="My image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">My favority cofe shop</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                quam earum fugit iure sequi beatae est vero quaerat inventore!
-                Facere, laboriosam. In, eius.
-              </p>
-              <a
-                href="https://picsum.photos/id/42/1500"
-                target="_blank"
-                class="btn btn-primary"
-                >Go large</a
-              >
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://picsum.photos/id/49/900"
+                class="card-img-top"
+                alt="My image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Country on big hill</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                  asperiores nisi quo quasi deserunt esse, commodi tempore
+                  debitis, earum ratione animi.
+                </p>
+                <a
+                  href="https://picsum.photos/id/49/1500"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Go large</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="https://picsum.photos/id/49/900"
-              class="card-img-top"
-              alt="My image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Country on big hill</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-                asperiores nisi quo quasi deserunt esse, commodi tempore
-                debitis, earum ratione animi.
-              </p>
-              <a
-                href="https://picsum.photos/id/49/1500"
-                target="_blank"
-                class="btn btn-primary"
-                >Go large</a
-              >
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://picsum.photos/id/42/900"
+                class="card-img-top"
+                alt="My image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">My favority cofe shop</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                  quam earum fugit iure sequi beatae est vero quaerat inventore!
+                  Facere, laboriosam. In, eius.
+                </p>
+                <a
+                  href="https://picsum.photos/id/42/1500"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Go large</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="https://picsum.photos/id/42/900"
-              class="card-img-top"
-              alt="My image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">My favority cofe shop</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                quam earum fugit iure sequi beatae est vero quaerat inventore!
-                Facere, laboriosam. In, eius.
-              </p>
-              <a
-                href="https://picsum.photos/id/42/1500"
-                target="_blank"
-                class="btn btn-primary"
-                >Go large</a
-              >
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://picsum.photos/id/49/900"
+                class="card-img-top"
+                alt="My image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Country on big hill</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                  asperiores nisi quo quasi deserunt esse, commodi tempore
+                  debitis, earum ratione animi.
+                </p>
+                <a
+                  href="https://picsum.photos/id/49/1500"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Go large</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="https://picsum.photos/id/49/900"
-              class="card-img-top"
-              alt="My image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Country on big hill</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-                asperiores nisi quo quasi deserunt esse, commodi tempore
-                debitis, earum ratione animi.
-              </p>
-              <a
-                href="https://picsum.photos/id/49/1500"
-                target="_blank"
-                class="btn btn-primary"
-                >Go large</a
-              >
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://picsum.photos/id/42/900"
+                class="card-img-top"
+                alt="My image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">My favority cofe shop</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                  quam earum fugit iure sequi beatae est vero quaerat inventore!
+                  Facere, laboriosam. In, eius.
+                </p>
+                <a
+                  href="https://picsum.photos/id/42/1500"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Go large</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="https://picsum.photos/id/42/900"
-              class="card-img-top"
-              alt="My image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">My favority cofe shop</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                quam earum fugit iure sequi beatae est vero quaerat inventore!
-                Facere, laboriosam. In, eius.
-              </p>
-              <a
-                href="https://picsum.photos/id/42/1500"
-                target="_blank"
-                class="btn btn-primary"
-                >Go large</a
-              >
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://picsum.photos/id/49/900"
+                class="card-img-top"
+                alt="My image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Country on big hill</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                  asperiores nisi quo quasi deserunt esse, commodi tempore
+                  debitis, earum ratione animi.
+                </p>
+                <a
+                  href="https://picsum.photos/id/49/1500"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Go large</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="https://picsum.photos/id/49/900"
-              class="card-img-top"
-              alt="My image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Country on big hill</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-                asperiores nisi quo quasi deserunt esse, commodi tempore
-                debitis, earum ratione animi.
-              </p>
-              <a
-                href="https://picsum.photos/id/49/1500"
-                target="_blank"
-                class="btn btn-primary"
-                >Go large</a
-              >
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://picsum.photos/id/42/900"
+                class="card-img-top"
+                alt="My image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">My favority cofe shop</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                  quam earum fugit iure sequi beatae est vero quaerat inventore!
+                  Facere, laboriosam. In, eius.
+                </p>
+                <a
+                  href="https://picsum.photos/id/42/1500"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Go large</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="https://picsum.photos/id/42/900"
-              class="card-img-top"
-              alt="My image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">My favority cofe shop</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                quam earum fugit iure sequi beatae est vero quaerat inventore!
-                Facere, laboriosam. In, eius.
-              </p>
-              <a
-                href="https://picsum.photos/id/42/1500"
-                target="_blank"
-                class="btn btn-primary"
-                >Go large</a
-              >
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://picsum.photos/id/49/900"
+                class="card-img-top"
+                alt="My image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Country on big hill</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                  asperiores nisi quo quasi deserunt esse, commodi tempore
+                  debitis, earum ratione animi.
+                </p>
+                <a
+                  href="https://picsum.photos/id/49/1500"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Go large</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://picsum.photos/id/42/900"
+                class="card-img-top"
+                alt="My image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">My favority cofe shop</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                  quam earum fugit iure sequi beatae est vero quaerat inventore!
+                  Facere, laboriosam. In, eius.
+                </p>
+                <a
+                  href="https://picsum.photos/id/42/1500"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Go large</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <!-- Space for cards end -->
+    </main>
   </body>
 </html>
