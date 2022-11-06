@@ -35,6 +35,7 @@
     />
     <link rel="manifest" href="favicon/site.webmanifest" />
     <!-- favicon end-->
+    npm i bootstrap-icons
   </head>
   <body>
     <!-- Naavigation -->
@@ -71,6 +72,11 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#"
                   >Home page</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >My basket</a
                 >
               </li>
               <li class="nav-item dropdown">
@@ -160,11 +166,11 @@
     <main>
       <header>
         <div
-          class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-rigth bg-light"
+          class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-light"
         >
           <div class="container text-center">
             <div class="row align-items-start">
-              <div class="col-md-6 p-lg-5 my-5">
+              <div class="col mx-0 my-lg-auto">
                 <h3 class="display-4 fw-normal">Opinion about compan</h3>
                 <p class="lead fw-normal">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -179,9 +185,9 @@
                 >
               </div>
 
-              <div class="col-md-6 p-lg-5 my-5">
+              <div class="col-md-6 my-3">
                 <img
-                  src="https://picsum.photos/id/57/900"
+                  src="https://picsum.photos/id/503/900"
                   class="card-img-top"
                   alt="My image"
                 />
@@ -215,13 +221,16 @@
                     target="_blank"
                     class="btn btn-primary"
                     d-md-block
-                    >Go large</a
+                    >Pay</a
                   >
                   <a
                     href="https://picsum.photos/id/57/900"
                     target="_blank"
                     class="btn btn-secondary"
-                    >Go large</a
+                    >Bascket</a
+                  >
+                  <a href="#" target="_blank" class="btn btn-secondary"
+                    >Art maker</a
                   >
                 </div>
               </div>
@@ -414,6 +423,35 @@
         </div>
       </div>
       <!-- Space for cards end -->
+      <!-- Swipe page -->
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
     </main>
+
+    <footer class="navbar navbar-dark bg-dark">
+      <div class="container text-bg-dark">
+        <div class="row-6">
+          <div class="col">
+            <h6>Принимали участие:</h6>
+            <p class="fs-6">
+              Гомелаури Галина Сергеевна <br />
+              Гомелаури Галина Сергеевна <br />
+              Гомелаури Галина Сергеевна
+            </p>
+          </div>
+          
+        </div>
+    </footer>
   </body>
 </html>
