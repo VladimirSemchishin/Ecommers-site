@@ -46,9 +46,142 @@
     <!-- Naavigation -->
     <nav class="navbar navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="/">Shop</a>
+        <div class="row">
+          <div class="col">
+            <a class="navbar-brand" href="/">Shop</a>
+          </div>
+          <div class="col-6"></div>
+          <div class="col">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasDarkNavbar"
+              aria-controls="offcanvasDarkNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <button
+            <div
+              class="offcanvas offcanvas-end text-bg-dark"
+              tabindex="-1"
+              id="offcanvasDarkNavbar"
+              aria-labelledby="offcanvasDarkNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <a href="sing-in.html" class="nav-link">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                    Sing in
+                  </h5>
+                </a>
+
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Home page</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="basket.html"
+                      >My basket</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Hot SALES
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li>
+                        <a class="dropdown-item" href="#">Unteresting offfer</a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Promo code</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Сlothes
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="#">Men</a></li>
+                      <li><a class="dropdown-item" href="#">Women</a></li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">UNISEX</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Brends
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="#">nem chsool</a></li>
+                      <li><a class="dropdown-item" href="#">old chsool</a></li>
+                      <li><a class="dropdown-item" href="#">hip-hop</a></li>
+                      <li><a class="dropdown-item" href="#">perfomance</a></li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Top of the top</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-success" type="submit">
+                    brends, clothes or cod word
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <a class="navbar-brand" href="/">Shop</a> -->
+
+        <!-- <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="offcanvas"
@@ -172,7 +305,7 @@
               </button>
             </form>
           </div>
-        </div>
+        </div> -->
       </div>
     </nav>
     <!-- Naavigation end -->
@@ -218,7 +351,7 @@
             <div class="card">
               <!-- 57 - 'это id номер с сайта, 300 - это размер в пикселях' -->
               <img
-                src="https://picsum.photos/id/57/900"
+                src="photo/1.carousel.jpg"
                 class="card-img-top"
                 alt="My image"
               />

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <!-- favicon end-->
+    <!-- icons -->
+    <script
+      src="https://kit.fontawesome.com/3eee4f0009.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- icons end -->
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <!-- Naavigation -->
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-md">
+        <a class="navbar-brand" href="/">LOCALIZATION</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <a href="sing-in.html" class="nav-link">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                <strong>Меню</strong>
+              </h5>
+            </a>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body py-0">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Главная</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="basket.html"
+                  >Корзина</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Каталог
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Для мужчин</a></li>
+                  <li><a class="dropdown-item" href="#">Для женщин</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Другое</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  HOT SALES
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a class="dropdown-item" href="#">Промо-коды</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">BLACK FRIDAY</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Бренды, одежда, промо-коды..."
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-secondary" type="submit">
+                Найти
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Naavigation end -->
+
+    <main>
+      <header>
+        <div
+          class="position-relative overflow-hidden p-4 p-md-6 m-md-5 bg-light"
+        >
+          <div class="text-center">
+            <div class="row align-items-start">
+              <div class="col-md-5 mx-0 my-lg-auto">
+                <h4 class="display-5 fw-normal">LOCALIZATION</h4>
+                <p class="lead fw-normal">
+                  Продвижение российской фэшн-индустрии. Работы начинающих
+                  дизайнеров, художников, стилистов. Fashion with love xo
+                </p>
+                <a
+                  class="btn btn-outline-secondary"
+                  href="info-folder/info.html"
+                  target="_blank"
+                  >Узнать больше</a
+                >
+              </div>
+
+              <div class="col-md-14 my-3">
+                <img
+                  src="photo/mike-von-y8MK4pMHjtE-unsplash.jpg"
+                  class="card-img-top"
+                  alt="My image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Space for cards -->
+      <div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+          <div class="col">
+            <div class="card">
+              <!-- 57 - 'это id номер с сайта, 300 - это размер в пикселях' -->
+              <img
+                src="photo/327c9aaf83df63eab8f7c565a3f639e0.jpeg"
+                class="card-img-top"
+                alt="My image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">БИЧ</h5>
+                <p class="card-text">Описание бренда</p>
+                <div class="text-center">
+                  <a
+                    href="page-card.html"
+                    target="_blank"
+                    class="btn btn-primary"
+                    d-md-block
+                    >Купить</a
+                  >
+                  <a
+                    href="art-page.html"
+                    target="_blank"
+                    class="btn btn-outline-secondary"
+                    >Узнать больше</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="photo/хай.jpeg" class="card-img-top" alt="My image" />
+              <div class="card-body">
+                <h5 class="card-title">PEACH</h5>
+                <p class="card-text">Описание бренда</p>
+                <a
+                  href="page-card.html"
+                  target="_blank"
+                  class="btn btn-primary"
+                  d-md-block
+                  >Купить</a
+                >
+                <a
+                  href="https://picsum.photos/id/49/1500"
+                  target="_blank"
+                  class="btn btn-outline-secondary"
+                  >Узнать больше</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="photo/кря.jpeg" class="card-img-top" alt="My image" />
+              <div class="card-body">
+                <h5 class="card-title">СВИТЕР</h5>
+                <p class="card-text">Описание бренда</p>
+                <a
+                  href="page-card.html"
+                  target="_blank"
+                  class="btn btn-primary"
+                  d-md-block
+                  >Купить</a
+                >
+                <a
+                  href="https://picsum.photos/id/49/1500"
+                  target="_blank"
+                  class="btn btn-outline-secondary"
+                  >Узнать больше</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="photo/платье.jpeg"
+                class="card-img-top"
+                alt="My image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">АВАНГАРД</h5>
+                <p class="card-text">Описание бренда</p>
+                <a
+                  href="page-card.html"
+                  target="_blank"
+                  class="btn btn-primary"
+                  d-md-block
+                  >Купить</a
+                >
+                <a
+                  href="https://picsum.photos/id/49/1500"
+                  target="_blank"
+                  class="btn btn-outline-secondary"
+                  >Узнать больше</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="photo/ня.jpeg" class="card-img-top" alt="My image" />
+              <div class="card-body">
+                <h5 class="card-title">FUTURESimple</h5>
+                <p class="card-text">Описание бренда</p>
+                <a
+                  href="page-card.html"
+                  target="_blank"
+                  class="btn btn-primary"
+                  d-md-block
+                  >Купить</a
+                >
+                <a
+                  href="https://picsum.photos/id/49/1500"
+                  target="_blank"
+                  class="btn btn-outline-secondary"
+                  >Узнать больше</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="photo/дэмн.jpeg" class="card-img-top" alt="My image" />
+              <div class="card-body">
+                <h5 class="card-title">SOWHAT?</h5>
+                <p class="card-text">Описание бренда</p>
+                <a
+                  href="page-card.html"
+                  target="_blank"
+                  class="btn btn-primary"
+                  d-md-block
+                  >Купить</a
+                >
+                <a
+                  href="https://picsum.photos/id/49/1500"
+                  target="_blank"
+                  class="btn btn-outline-secondary"
+                  >Узнать больше</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="photo/оп.jpeg" class="card-img-top" alt="My image" />
+              <div class="card-body">
+                <h5 class="card-title">Девять</h5>
+                <p class="card-text">Описание бренда</p>
+                <a
+                  href="page-card.html"
+                  target="_blank"
+                  class="btn btn-primary"
+                  d-md-block
+                  >Купить</a
+                >
+                <a
+                  href="https://picsum.photos/id/49/1500"
+                  target="_blank"
+                  class="btn btn-outline-secondary"
+                  >Узнать больше</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="photo/хай.jpeg" class="card-img-top" alt="My image" />
+              <div class="card-body">
+                <h5 class="card-title">OCEAN</h5>
+                <p class="card-text">Описание бренда</p>
+                <a
+                  href="page-card.html"
+                  target="_blank"
+                  class="btn btn-primary"
+                  d-md-block
+                  >Купить</a
+                >
+                <a
+                  href="https://picsum.photos/id/49/1500"
+                  target="_blank"
+                  class="btn btn-outline-secondary"
+                  >Узнать больше</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="photo/a1422d3f5266cd242ff37bf2dd8b054a.jpeg"
+                class="card-img-top"
+                alt="My image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">STREETS</h5>
+                <p class="card-text">Описание бренда</p>
+                <a
+                  href="page-card.html"
+                  target="_blank"
+                  class="btn btn-primary"
+                  d-md-block
+                  >Купить</a
+                >
+                <a
+                  href="https://picsum.photos/id/49/1500"
+                  target="_blank"
+                  class="btn btn-outline-secondary"
+                  >Узнать больше</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Space for cards end -->
+      <!-- Swipe page -->
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link">Назад</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Дальше</a>
+          </li>
+        </ul>
+      </nav>
+    </main>
+    <!-- Swipe page end -->
+    <!-- footer -->
+    <div class="container">
+      <footer class="py-5 border-top">
+        <div class="row text-center">
+          <div class="col-6 col-md-4 mb-3">
+            <h5><br /></h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">О нас</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  class="link-dark"
+                  href="https://twitter.com/?lang=ru"
+                  target="_blank"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+
+                <a class="link-dark" href="https://vk.com/" target="_blank"
+                  ><i class="fa-brands fa-vk"></i
+                ></a>
+                <a
+                  class="link-dark"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+
+                <a
+                  class="link-dark"
+                  href="https://github.com/VladimirSemchishin"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 mb-3">
+            <h5>Подробнее</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Контакты</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  class="link-dark"
+                  href="https://twitter.com/?lang=ru"
+                  target="_blank"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+
+                <a class="link-dark" href="https://vk.com/" target="_blank"
+                  ><i class="fa-brands fa-vk"></i
+                ></a>
+                <a
+                  class="link-dark"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+
+                <a
+                  class="link-dark"
+                  href="https://github.com/VladimirSemchishin"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 mb-3">
+            <h5><br /></h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Рассылка</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  class="link-dark"
+                  href="https://twitter.com/?lang=ru"
+                  target="_blank"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+
+                <a class="link-dark" href="https://vk.com/" target="_blank"
+                  ><i class="fa-brands fa-vk"></i
+                ></a>
+                <a
+                  class="link-dark"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+
+                <a
+                  class="link-dark"
+                  href="https://github.com/VladimirSemchishin"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+        >
+          <p>© 2022 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <!-- VK -->
+              <a class="link-dark" href="https://vk.com/" target="_blank"
+                ><i class="fa-brands fa-vk"></i
+              ></a>
+            </li>
+            <li class="ms-3">
+              <!-- Inst -->
+              <a
+                class="link-dark"
+                href="https://www.instagram.com/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li class="ms-3">
+              <!-- Twitter -->
+              <a
+                class="link-dark"
+                href="https://twitter.com/?lang=ru"
+                target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
