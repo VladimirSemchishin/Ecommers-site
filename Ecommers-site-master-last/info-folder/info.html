@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <!-- favicon end-->
+  </head>
+  <body>
+    <!-- Naavigation -->
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/">LOCALIZATION</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+        class="offcanvas offcanvas-end text-bg-dark"
+        tabindex="-1"
+        id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel"
+      >
+        <div class="offcanvas-header">
+          <a href="login-or-registration-page/sing-in.html" class="nav-link">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              <strong>Меню</strong>
+            </h5>
+          </a>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body py-0">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html"
+                >Главная</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="basket-folder/basket.html"
+                >Корзина</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Каталог
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Для мужчин</a></li>
+                <li><a class="dropdown-item" href="#">Для женщин</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Другое</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                HOT SALES
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a class="dropdown-item" href="#">Промо-коды</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">BLACK FRIDAY</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Бренды, одежда, промо-коды..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-secondary" type="submit">
+              Найти
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+    </nav>
+    <!-- Naavigation end -->
+    <main>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="true"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="../photo/mike-von-y8MK4pMHjtE-unsplash.jpg"
+              class="d-block w-100"
+              alt="1 photo in carusel"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+                  src="../photo/photo9.jpeg"
+                  class="card-img-top"
+                  alt="My image"
+                />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../photo/photo3.jpeg"
+              class="d-block w-100"
+              alt="3 photo in carusel"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- About company -->
+      <div
+        class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-rigth bg-light"
+      >
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-12 my-3">
+              <h3 class="display-5 fw-bold lh-1 mb-3">LOCALIZATION</h3>
+              <p class="lead ">
+                Продвижение российской фэшн-индустрии. Работы начинающих
+                дизайнеров, художников, стилистов. Fashion with love xo
+              </p>
+              <a class="btn btn-outline-secondary" href="#" target="_blank"
+                >Social media</a
+              >
+              <a class="btn btn-outline-secondary" href="#" target="_blank"
+                >More in Video</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About company end-->
+<!-- sing up -->
+<div class="container col-xl-10 col-xxl-8 px-4 py-5">
+  <div class="row align-items-center g-lg-5 py-5">
+    <div class="col-lg-7 text-center text-lg-start">
+      <h1 class="display-5 fw-bold lh-1 mb-3">Хочешь быть в курсе последних новостей в мире моды? </h1>
+      <p class="col-lg-10 lead"> Скорее регистрируйся на фэшн-платформе Localization и следи за модными новинками!</p>
+    </div>
+    <div class="col-md-10 mx-auto col-lg-5">
+      <form class="p-4 p-md-5 border rounded-3 bg-light">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Почта</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Пароль</label>
+        </div>
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me"> Запомнить 
+          </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Войти</button>
+        <hr class="my-4">
+        <small class="text-muted">Нажимая на кнопку "Войти", вы соглашаетесь с правилами сайта.</small>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- sing up end -->
+<!-- text -->
+<div class="container my-5 py-5 border-top">
+  <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+      <img class="rounded-lg-3" src="../photo/327c9aaf83df63eab8f7c565a3f639e0.jpeg" width="720">
+  </div>
+    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+      <h1 class="display-4 fw-bold lh-1">Обзор новостей мира моды</h1>
+      <p class="lead">Для всех фанатов модной индустрии мы еженедельно публикуем отчет самых хитовых событий фэшн-индустрии. С нами вы всегда будете в курсе! </p>
+      
+    </div>
+  </div>
+</div>
+<!-- text -->
+      <div class="container col-xxl-8 px-4 py-5 border-top">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="../photo/07c0270f11e0fd7ffcffcf0f62f1172f.jpeg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="display-5 fw-bold lh-1 mb-3">Партнерство</h2>
+            <p class="lead">Команда Localization всегда рада сотрудничеству! Более подробную информацию можно найти в разделе "Контакты"</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- answers on questions -->
+      <div class="container py-5 border-top">
+        <h2>Ответы на часто задаваемые вопросы</h2>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                Как Вас зовут?
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div class="accordion-body">
+                <strong>Lorem ipsum dolor sit amet..</strong> Lorem ipsum dolor
+                sit, amet consectetur adipisicing elit. Nam necessitatibus id
+                itaque consequuntur doloribus et atque nulla saepe, veritatis,
+                quae architecto animi, iste ratione eius fugit assumenda dicta
+                quo ea!
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo"
+              >
+              Ответ #2
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingTwo"
+            >
+              <div class="accordion-body">
+                <strong>Lorem ipsum dolor sit amet..</strong> Lorem ipsum dolor
+                sit, amet consectetur adipisicing elit. Nam necessitatibus id
+                itaque consequuntur doloribus et atque nulla saepe, veritatis,
+                quae architecto animi, iste ratione eius fugit assumenda dicta
+                quo ea!
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree"
+              >
+              Ответ #3
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingThree"
+            >
+              <div class="accordion-body">
+                <strong>Lorem ipsum dolor sit amet..</strong> Lorem ipsum dolor
+                sit, amet consectetur adipisicing elit. Nam necessitatibus id
+                itaque consequuntur doloribus et atque nulla saepe, veritatis,
+                quae architecto animi, iste ratione eius fugit assumenda dicta
+                quo ea!
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseFour"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseFour"
+              >
+              Ответ #4
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingFour"
+            >
+              <div class="accordion-body">
+                <strong>Lorem ipsum dolor sit amet..</strong> Lorem ipsum dolor
+                sit, amet consectetur adipisicing elit. Nam necessitatibus id
+                itaque consequuntur doloribus et atque nulla saepe, veritatis,
+                quae architecto animi, iste ratione eius fugit assumenda dicta
+                quo ea!
+              </div>
+            </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseFive"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseFive"
+              >
+              Ответ #5
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingFive"
+            >
+              <div class="accordion-body">
+                <strong>Lorem ipsum dolor sit amet..</strong> Lorem ipsum dolor
+                sit, amet consectetur adipisicing elit. Nam necessitatibus id
+                itaque consequuntur doloribus et atque nulla saepe, veritatis,
+                quae architecto animi, iste ratione eius fugit assumenda dicta
+                quo ea!
+              </div>
+            </div>   
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseSix"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseSix"
+              >
+              Ответ #6
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseSix"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingSix"
+            >
+              <div class="accordion-body">
+                <strong>Lorem ipsum dolor sit amet..</strong> Lorem ipsum dolor
+                sit, amet consectetur adipisicing elit. Nam necessitatibus id
+                itaque consequuntur doloribus et atque nulla saepe, veritatis,
+                quae architecto animi, iste ratione eius fugit assumenda dicta
+                quo ea!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- answers on questions end-->
+    </main>
+    <div class="bg-dark text-secondary px-4 py-5 text-center">
+      <div class="py-5">
+        <h1 class="display-5 fw-bold text-white">Dark mode hero</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="#"></a>
+            <button type="button" class="btn btn-outline-light btn-lg px-4">Back home</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
