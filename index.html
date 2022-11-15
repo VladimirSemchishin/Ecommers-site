@@ -59,11 +59,139 @@
     <nav class="navbar navbar-dark bg-dark">
       <div class="container-md d-flex flex-row-reverse justify-content-between">
         <div>
-          <a href="art-page-folder/art-page.html"
-            ><i
-              class="bi bi-person-square text-white btn btn-outline-secondary me-md-2"
-            ></i
-          ></a>
+          <!-- кнопка регистрации -->
+          <button
+            type="button"
+            class="bi bi-person-square text-white btn btn-outline-secondary me-md-2"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          ></button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header p-5 pb-4 border-bottom-0">
+                  <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+                  <h1 class="fw-bold mb-0 fs-2">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >Бесплатно зарегестрироваться</font
+                      ></font
+                    >
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Закрывать"
+                  ></button>
+                </div>
+                <div class="modal-body p-5 pt-0">
+                  <form class="">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="email"
+                        class="form-control rounded-3"
+                        id="floatingInput"
+                        placeholder="имя@пример.com"
+                      />
+                      <label for="floatingInput"
+                        ><font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >Адрес электронной почты</font
+                          ></font
+                        ></label
+                      >
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="password"
+                        class="form-control rounded-3"
+                        id="floatingPassword"
+                        placeholder="Пароль"
+                      />
+                      <label for="floatingPassword"
+                        ><font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >Пароль</font
+                          ></font
+                        ></label
+                      >
+                    </div>
+                    <button
+                      class="w-100 mb-2 btn btn-lg rounded-3 btn-primary"
+                      type="submit"
+                    >
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >Регистрация</font
+                        ></font
+                      >
+                    </button>
+                    <small class="text-muted"
+                      ><font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >Нажимая Зарегистрироваться, вы соглашаетесь с
+                          условиями использования.</font
+                        ></font
+                      ></small
+                    >
+                    <hr class="my-4" />
+                    <h2 class="fs-5 fw-bold mb-3">
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >Или используйте сторонний</font
+                        ></font
+                      >
+                    </h2>
+                    <button
+                      class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3"
+                      type="submit"
+                    >
+                      <svg class="bi me-1" width="16" height="16">
+                        <use xlink:href="#twitter"></use></svg
+                      ><font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">
+                          Зарегистрируйтесь в Твиттере
+                        </font></font
+                      >
+                    </button>
+                    <button
+                      class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3"
+                      type="submit"
+                    >
+                      <svg class="bi me-1" width="16" height="16">
+                        <use xlink:href="#facebook"></use></svg
+                      ><font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">
+                          Зарегистрируйтесь через Facebook
+                        </font></font
+                      >
+                    </button>
+                    <button
+                      class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3"
+                      type="submit"
+                    >
+                      <svg class="bi me-1" width="16" height="16">
+                        <use xlink:href="#github"></use></svg
+                      ><font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">
+                          Зарегистрируйтесь на GitHub
+                        </font></font
+                      >
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <a href="basket-folder/basket.html"
             ><i class="bi bi-cart4 text-white btn btn-outline-secondary"></i
@@ -369,7 +497,7 @@
                   >Купить</a
                 >
                 <a
-                  href="art-page.html"
+                  href="art-page-folder/art-page.html"
                   target="_blank"
                   class="btn btn-outline-secondary"
                   >Узнать больше</a
