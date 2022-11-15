@@ -19,46 +19,201 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="favicon/apple-touch-icon.png"
+      href="../favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="favicon/favicon-32x32.png"
+      href="../favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="favicon/favicon-16x16.png"
+      href="../favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
     <!-- favicon end-->
+    <!-- icons -->
+    <script
+      src="https://kit.fontawesome.com/3eee4f0009.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- icons end -->
+    <link rel="stylesheet" href="Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- CSS end-->
   </head>
   <body>
-    <!-- Naavigation -->
-    <nav class="navbar navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="/">LOCALIZATION</a>
+   <!-- Naavigation -->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-md d-flex flex-row-reverse justify-content-between">
+      <div>
+        <!-- кнопка регистрации -->
         <button
-          class="navbar-toggler"
           type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasDarkNavbar"
-          aria-controls="offcanvasDarkNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          class="bi bi-person-square text-white btn btn-outline-secondary me-md-2"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        ></button>
 
+        <!-- Modal -->
         <div
-        class="offcanvas offcanvas-end text-bg-dark"
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header p-5 pb-4 border-bottom-0">
+                <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+                <h1 class="fw-bold mb-0 fs-2">
+                  <font style="vertical-align: inherit"
+                    >Бесплатно зарегестрироваться
+                  </font>
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Закрывать"
+                ></button>
+              </div>
+              <div class="modal-body p-5 pt-0">
+                <form class="">
+                  <div class="form-floating mb-3">
+                    <input
+                      type="email"
+                      class="form-control rounded-3"
+                      id="floatingInput"
+                      placeholder="имя@пример.com"
+                    />
+                    <label for="floatingInput"
+                      ><font style="vertical-align: inherit"
+                        >Адрес электронной почты</font
+                      ></label
+                    >
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input
+                      type="password"
+                      class="form-control rounded-3"
+                      id="floatingPassword"
+                      placeholder="Пароль"
+                    />
+                    <label for="floatingPassword"
+                      ><font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >Пароль</font
+                        ></font
+                      ></label
+                    >
+                  </div>
+                  <button
+                    class="w-100 mb-2 btn btn-lg rounded-3 btn-primary"
+                    type="submit"
+                  >
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >Регистрация</font
+                      ></font
+                    >
+                  </button>
+                  <small class="text-muted"
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >Нажимая Зарегистрироваться, вы соглашаетесь с
+                        условиями использования.</font
+                      ></font
+                    ></small
+                  >
+                  <hr class="my-4" />
+                  <h2 class="fs-5 fw-bold mb-3">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >Или используйте сторонний</font
+                      ></font
+                    >
+                  </h2>
+                  <button
+                    class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3"
+                    type="submit"
+                  >
+                    <svg class="bi me-1" width="16" height="16">
+                      <use xlink:href="#twitter"></use></svg
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit">
+                        Зарегистрируйтесь в Твиттере
+                      </font></font
+                    >
+                  </button>
+                  <button
+                    class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3"
+                    type="submit"
+                  >
+                    <svg class="bi me-1" width="16" height="16">
+                      <use xlink:href="#facebook"></use></svg
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit">
+                        Зарегистрируйтесь через Facebook
+                      </font></font
+                    >
+                  </button>
+                  <button
+                    class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3"
+                    type="submit"
+                  >
+                    <svg class="bi me-1" width="16" height="16">
+                      <use xlink:href="#github"></use></svg
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit">
+                        Зарегистрируйтесь на GitHub
+                      </font></font
+                    >
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="../basket-folder/basket.html"
+          ><i class="bi bi-cart4 text-white btn btn-outline-secondary"></i
+        ></a>
+      </div>
+
+      <a class="navbar-brand center" href="../index.html">LOCALIZATION</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="offcanvas offcanvas-start text-bg-dark"
         tabindex="-1"
         id="offcanvasDarkNavbar"
         aria-labelledby="offcanvasDarkNavbarLabel"
       >
         <div class="offcanvas-header">
-          <a href="login-or-registration-page/sing-in.html" class="nav-link">
+          <a href="../index.html" class="nav-link">
             <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
               <strong>Меню</strong>
             </h5>
@@ -73,7 +228,10 @@
         <div class="offcanvas-body py-0">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
                 >Главная</a
               >
             </li>
@@ -81,7 +239,7 @@
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="basket-folder/basket.html"
+                href="../basket-folder/basket.html"
                 >Корзина</a
               >
             </li>
@@ -144,8 +302,7 @@
       </div>
     </div>
   </nav>
-    </nav>
-    <!-- Naavigation end -->
+  <!-- Naavigation end -->
     <main>
       <div
         id="carouselExampleIndicators"
@@ -466,17 +623,145 @@
       </div>
       <!-- answers on questions end-->
     </main>
-    <div class="bg-dark text-secondary px-4 py-5 text-center">
-      <div class="py-5">
-        <h1 class="display-5 fw-bold text-white">Dark mode hero</h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <a href="#"></a>
-            <button type="button" class="btn btn-outline-light btn-lg px-4">Back home</button>
+    <!-- footer -->
+    <div class="container">
+      <footer class="border-top">
+        <h5 class="text-center py-3">Подробнее</h5>
+        <div class="row text-center py-3">
+          <div class="col-12 col-md-4 mb-3">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">О нас</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  class="link-dark"
+                  href="https://twitter.com/?lang=ru"
+                  target="_blank"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+
+                <a class="link-dark" href="https://vk.com/" target="_blank"
+                  ><i class="fa-brands fa-vk"></i
+                ></a>
+                <a
+                  class="link-dark"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+
+                <a
+                  class="link-dark"
+                  href="https://github.com/VladimirSemchishin"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-4 mb-3 col-sm-4">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Контакты</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  class="link-dark"
+                  href="https://twitter.com/?lang=ru"
+                  target="_blank"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+
+                <a class="link-dark" href="https://vk.com/" target="_blank"
+                  ><i class="fa-brands fa-vk"></i
+                ></a>
+                <a
+                  class="link-dark"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+
+                <a
+                  class="link-dark"
+                  href="https://github.com/VladimirSemchishin"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-4 mb-3">
+            <h5><br /></h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Рассылка</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  class="link-dark"
+                  href="https://twitter.com/?lang=ru"
+                  target="_blank"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+
+                <a class="link-dark" href="https://vk.com/" target="_blank"
+                  ><i class="fa-brands fa-vk"></i
+                ></a>
+                <a
+                  class="link-dark"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+
+                <a
+                  class="link-dark"
+                  href="https://github.com/VladimirSemchishin"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
+
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+        >
+          <p>© 2022 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <!-- VK -->
+              <a class="link-dark" href="https://vk.com/" target="_blank"
+                ><i class="fa-brands fa-vk"></i
+              ></a>
+            </li>
+            <li class="ms-3">
+              <!-- Inst -->
+              <a
+                class="link-dark"
+                href="https://www.instagram.com/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li class="ms-3">
+              <!-- Twitter -->
+              <a
+                class="link-dark"
+                href="https://twitter.com/?lang=ru"
+                target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
+  </body>
   </body>
 </html>
