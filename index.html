@@ -57,19 +57,20 @@
   <body>
     <!-- Naavigation -->
     <nav class="navbar navbar-dark bg-dark">
-      <div class="container-md">
-        <a class="navbar-brand center" href="/">LOCALIZATION</a>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-          <a href="#"
+      <div class="container-md d-flex flex-row-reverse justify-content-between">
+        <div>
+          <a href="art-page-folder/art-page.html"
             ><i
               class="bi bi-person-square text-white btn btn-outline-secondary me-md-2"
             ></i
           ></a>
 
-          <a href="#"
+          <a href="basket-folder/basket.html"
             ><i class="bi bi-cart4 text-white btn btn-outline-secondary"></i
           ></a>
         </div>
+
+        <a class="navbar-brand center" href="index.html">LOCALIZATION</a>
 
         <button
           class="navbar-toggler"
@@ -82,13 +83,13 @@
         </button>
 
         <div
-          class="offcanvas offcanvas-end text-bg-dark"
+          class="offcanvas offcanvas-start text-bg-dark"
           tabindex="-1"
           id="offcanvasDarkNavbar"
           aria-labelledby="offcanvasDarkNavbarLabel"
         >
           <div class="offcanvas-header">
-            <a href="sing-in.html" class="nav-link">
+            <a href="index.html" class="nav-link">
               <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
                 <strong>Меню</strong>
               </h5>
@@ -180,7 +181,7 @@
       <!-- карусель -->
       <div
         id="carouselExampleDark"
-        class="carousel carousel-dark slide"
+        class="container-fluid carousel carousel-dark slide px-0"
         data-bs-ride="carousel"
       >
         <div class="carousel-indicators">
@@ -209,9 +210,9 @@
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="4000">
             <div class="row">
-              <div class="col p-0">
+              <div class="col p-0 my-photo-carusel">
                 <img
-                  src="photo/mike-von-y8MK4pMHjtE-unsplash.jpg"
+                  src="photo/photo-img/9C565483-D399-49E2-AD64-4511BA1C8C46_1_201_a.jpeg"
                   class="d-block w-100"
                   alt="..."
                 />
@@ -228,7 +229,7 @@
                         <h1>
                           <a
                             class="btn btn-outline-light"
-                            href="#"
+                            href="art-page-folder/art-page.html"
                             target="_blank"
                             ><strong>SHOP NOW</strong>
                           </a>
@@ -238,18 +239,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col p-0">
-                <img
-                  src="photo/mike-von-y8MK4pMHjtE-unsplash.jpg"
-                  class="d-block w-100 p-0"
-                  alt="..."
-                />
-              </div>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="4000">
             <div class="row">
-              <div class="col p-0">
+              <div class="col p-0 my-photo-carusel">
                 <img src="photo/photo9.jpeg" class="d-block w-100" alt="..." />
                 <div class="carousel-caption d-none d-md-block">
                   <div class="text-on-img">
@@ -262,7 +256,7 @@
                         <h1>
                           <a
                             class="btn btn-outline-light b"
-                            href="#"
+                            href="login-and-registration-page/log-in.htmls"
                             target="_blank"
                           >
                             RIGISTER NOW
@@ -273,18 +267,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col p-0">
-                <img
-                  src="photo/photo9.jpeg"
-                  class="d-block w-100 p-0"
-                  alt="..."
-                />
-              </div>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="4000">
             <div class="row">
-              <div class="col p-0">
+              <div class="col p-0 my-photo-carusel">
                 <img src="photo/photo3.jpeg" class="d-block w-100" alt="..." />
                 <div class="carousel-caption d-none d-md-block">
                   <div class="text-on-img">
@@ -297,7 +284,7 @@
                         <h1>
                           <a
                             class="btn btn-outline-light b"
-                            href="#"
+                            href="login-and-registration-page/log-in.html"
                             target="_blank"
                           >
                             JOIN NOW
@@ -307,13 +294,6 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col p-0">
-                <img
-                  src="photo/photo3.jpeg"
-                  class="d-block w-100 p-0"
-                  alt="..."
-                />
               </div>
             </div>
           </div>
@@ -337,7 +317,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-
+      <!-- Localozation и 2 кнопки -->
       <div
         class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-rigth bg-light"
       >
@@ -349,14 +329,9 @@
                 Продвижение российской фэшн-индустрии. Работы начинающих
                 дизайнеров, художников, стилистов. Fashion with love xo
               </p>
-              <a class="btn btn-outline-secondary" href="#" target="_blank"
-                >Social media</a
-              >
-              <a class="btn btn-outline-secondary" href="#" target="_blank"
-                >Личный аккаунт</a
-              >
+
               <a
-                class="btn btn-outline-secondary"
+                class="btn btn-dark"
                 href="info-folder/info.html"
                 target="_blank"
                 >О компании</a
@@ -380,7 +355,11 @@
               />
               <div class="card-body">
                 <h5 class="card-title">БИЧ</h5>
-                <p class="card-text">Описание бренда</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Corrupti dicta inventore rem minus consequatur neque debitis
+                  dignissimos autem odit dolorum.
+                </p>
 
                 <a
                   href="page-card-folder/page-card.html"
@@ -407,7 +386,11 @@
               />
               <div class="card-body">
                 <h5 class="card-title">PEACH</h5>
-                <p class="card-text">Описание бренда</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Corrupti dicta inventore rem minus consequatur neque debitis
+                  dignissimos autem odit dolorum.
+                </p>
                 <a
                   href="page-card-folder/page-card.html"
                   target="_blank"
@@ -416,7 +399,7 @@
                   >Купить</a
                 >
                 <a
-                  href="https://picsum.photos/id/49/1500"
+                  href="art-page-folder/art-page.html"
                   target="_blank"
                   class="btn btn-outline-secondary"
                   >Узнать больше</a
@@ -433,7 +416,11 @@
               />
               <div class="card-body">
                 <h5 class="card-title">СВИТЕР</h5>
-                <p class="card-text">Описание бренда</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Corrupti dicta inventore rem minus consequatur neque debitis
+                  dignissimos autem odit dolorum.
+                </p>
                 <a
                   href="page-card-folder/page-card.html"
                   target="_blank"
@@ -442,7 +429,7 @@
                   >Купить</a
                 >
                 <a
-                  href="https://picsum.photos/id/49/1500"
+                  href="art-page-folder/art-page.html"
                   target="_blank"
                   class="btn btn-outline-secondary"
                   >Узнать больше</a
@@ -459,7 +446,11 @@
               />
               <div class="card-body">
                 <h5 class="card-title">АВАНГАРД</h5>
-                <p class="card-text">Описание бренда</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Corrupti dicta inventore rem minus consequatur neque debitis
+                  dignissimos autem odit dolorum.
+                </p>
                 <a
                   href="page-card-folder/page-card.html"
                   target="_blank"
@@ -468,7 +459,7 @@
                   >Купить</a
                 >
                 <a
-                  href="https://picsum.photos/id/49/1500"
+                  href="art-page-folder/art-page.html"
                   target="_blank"
                   class="btn btn-outline-secondary"
                   >Узнать больше</a
@@ -485,7 +476,11 @@
               />
               <div class="card-body">
                 <h5 class="card-title">FUTURESimple</h5>
-                <p class="card-text">Описание бренда</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Corrupti dicta inventore rem minus consequatur neque debitis
+                  dignissimos autem odit dolorum.
+                </p>
                 <a
                   href="page-card-folder/page-card.html"
                   target="_blank"
@@ -494,7 +489,7 @@
                   >Купить</a
                 >
                 <a
-                  href="https://picsum.photos/id/49/1500"
+                  href="art-page-folder/art-page.html"
                   target="_blank"
                   class="btn btn-outline-secondary"
                   >Узнать больше</a
@@ -511,7 +506,11 @@
               />
               <div class="card-body">
                 <h5 class="card-title">SOWHAT?</h5>
-                <p class="card-text">Описание бренда</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Corrupti dicta inventore rem minus consequatur neque debitis
+                  dignissimos autem odit dolorum.
+                </p>
                 <a
                   href="page-card-folder/page-card.html"
                   target="_blank"
@@ -520,7 +519,7 @@
                   >Купить</a
                 >
                 <a
-                  href="https://picsum.photos/id/49/1500"
+                  href="art-page-folder/art-page.html"
                   target="_blank"
                   class="btn btn-outline-secondary"
                   >Узнать больше</a
@@ -537,7 +536,11 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Девять</h5>
-                <p class="card-text">Описание бренда</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Corrupti dicta inventore rem minus consequatur neque debitis
+                  dignissimos autem odit dolorum.
+                </p>
                 <a
                   href="page-card-folder/page-card.html"
                   target="_blank"
@@ -546,7 +549,7 @@
                   >Купить</a
                 >
                 <a
-                  href="https://picsum.photos/id/49/1500"
+                  href="art-page-folder/art-page.html"
                   target="_blank"
                   class="btn btn-outline-secondary"
                   >Узнать больше</a
@@ -563,7 +566,11 @@
               />
               <div class="card-body">
                 <h5 class="card-title">OCEAN</h5>
-                <p class="card-text">Описание бренда</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Corrupti dicta inventore rem minus consequatur neque debitis
+                  dignissimos autem odit dolorum.
+                </p>
                 <a
                   href="page-card-folder/page-card.html"
                   target="_blank"
@@ -572,7 +579,7 @@
                   >Купить</a
                 >
                 <a
-                  href="https://picsum.photos/id/49/1500"
+                  href="art-page-folder/art-page.html"
                   target="_blank"
                   class="btn btn-outline-secondary"
                   >Узнать больше</a
@@ -589,7 +596,11 @@
               />
               <div class="card-body">
                 <h5 class="card-title">STREETS</h5>
-                <p class="card-text">Описание бренда</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Corrupti dicta inventore rem minus consequatur neque debitis
+                  dignissimos autem odit dolorum.
+                </p>
                 <a
                   href="page-card-folder/page-card.html"
                   target="_blank"
@@ -598,7 +609,7 @@
                   >Купить</a
                 >
                 <a
-                  href="https://picsum.photos/id/49/1500"
+                  href="art-page-folder/art-page.html"
                   target="_blank"
                   class="btn btn-outline-secondary"
                   >Узнать больше</a
@@ -613,14 +624,20 @@
 
       <nav aria-label="Page navigation example ">
         <ul class="pagination justify-content-center py-4">
-          <li class="page-item disabled">
-            <a class="page-link">Назад</a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
           <li class="page-item">
-            <a class="page-link" href="#">Дальше</a>
+            <a class="page-link text-black">Назад</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link text-black" href="#">1</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link text-black" href="#">2</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link text-black" href="#">3</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link text-black" href="#">Дальше</a>
           </li>
         </ul>
       </nav>
@@ -630,9 +647,9 @@
     <!-- footer -->
     <div class="container">
       <footer class="border-top">
+        <h5 class="text-center py-3">Подробнее</h5>
         <div class="row text-center py-3">
-          <div class="col-6 col-md-4 mb-3">
-            <h5><br /></h5>
+          <div class="col-12 col-md-4 mb-3">
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-muted">О нас</a>
@@ -665,8 +682,7 @@
             </ul>
           </div>
 
-          <div class="col-6 col-md-4 mb-3 col-sm-4">
-            <h5>Подробнее</h5>
+          <div class="col-12 col-md-4 mb-3 col-sm-4">
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-muted">Контакты</a>
@@ -699,7 +715,7 @@
             </ul>
           </div>
 
-          <div class="col-6 col-md-4 mb-3">
+          <div class="col-12 col-md-4 mb-3">
             <h5><br /></h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
