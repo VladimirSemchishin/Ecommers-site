@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -94,10 +98,14 @@
                   ></button>
                 </div>
                 <div class="modal-body p-5 pt-0">
-                  <form class="">
+                  <form
+                    action="login-and-registration-page/vendor/singin.php"
+                    method="post"
+                  >
                     <div class="form-floating mb-3">
                       <input
                         type="email"
+                        name="email"
                         class="form-control rounded-3"
                         id="floatingInput"
                         placeholder="имя@пример.com"
@@ -113,6 +121,7 @@
                     <div class="form-floating mb-3">
                       <input
                         type="password"
+                        name="password"
                         class="form-control rounded-3"
                         id="floatingPassword"
                         placeholder="Пароль"
@@ -133,6 +142,12 @@
                         ><font style="vertical-align: inherit">Вход</font></font
                       >
                     </button>
+                    <?php
+                        if(isset($_SESSION['message-error-singin'])) { //isset() - если сущесвует ()
+                          echo $_SESSION['message-error-singin'];
+                        }
+                        unset($_SESSION['message-error-singin']);
+                      ?>
                     <hr class="my-4" />
 
                     <h2 class="fs-5 fw-bold mb-3">
@@ -146,7 +161,7 @@
                       class="w-100 py-2 mb-2 btn btn-success"
                       type="submit"
                       target="_blank"
-                      href="login-and-registration-page/reg.html"
+                      href="login-and-registration-page/reg.php"
                     >
                       Регистрация
                     </a>
