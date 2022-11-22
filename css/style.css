@@ -29,3 +29,7 @@
 .photo-art-page {
   max-height: 400px;
 }
+
+.rounded-sm {
+  border-radius: 10%;
+}
