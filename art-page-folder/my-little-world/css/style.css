@@ -1,0 +1,35 @@
+/* Фотография под навигацией, с наложенным текстом*/
+.lonly-ing {
+  position: relative;
+  margin: 0 auto; /* Center it */
+}
+
+.text-on-img {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+
+.my-cariusel {
+  display: flex;
+  max-height: 200;
+}
+
+.my-cariusel .my-cariusel-item img {
+  object-fit: cover;
+}
+
+.my-photo-carusel {
+  max-height: 1080px;
+}
+
+.photo-art-page {
+  max-height: 1080px;
+}
+
+.rounded-sm {
+  border-radius: 10%;
+}

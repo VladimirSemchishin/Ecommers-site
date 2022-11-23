@@ -16,17 +16,17 @@ $pass2= $_POST['pass2'] ?? '';
 $_SESSION['message'] = [];
 if( !$email ) {
   $_SESSION['message'][] = 'Задайте корректный емейл';  
-  header('Location: /?signup');
+  header('Location: /art-page-folder/prosto-registracia/index.php?signup');
   exit;
 }
 if( !$pass1 || !$pass2 ) {
   $_SESSION['message'][] = 'Задайте пароль и подтверждение';
-  header('Location: /?signup');
+  header('Location: /art-page-folder/prosto-registracia/index.php?signup');
   exit;
 }
 if( $pass1 != $pass2 ) {
   $_SESSION['message'][] = 'Укажите одинаковые пароли';
-  header('Location: /?signup');
+  header('Location: /art-page-folder/prosto-registracia/index.php?signup');
   exit;
 }
 
@@ -38,7 +38,7 @@ if (mysqli_stmt_prepare($stmt, 'SELECT idusers FROM users WHERE email=?')) {
   mysqli_stmt_fetch($stmt);
   if( $idusers ){
     $_SESSION['message'][] = 'Email уже занят';
-    header('Location: /?signup');
+    header('Location: /art-page-folder/prosto-registracia/index.php?signup');
     exit;
   }
   
