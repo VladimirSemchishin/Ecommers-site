@@ -23,11 +23,15 @@
 }
 
 .my-photo-carusel {
-  max-height: 1080px;
+  max-height: 700px;
 }
 
-.photo-art-page {
-  max-height: 1080px;
+.max-height-600 {
+  max-height: 600px;
+}
+
+.max-height-500 {
+  max-height: 500px;
 }
 
 .rounded-sm {

@@ -50,7 +50,7 @@
             <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
                 aria-labelledby="offcanvasDarkNavbarLabel">
                 <div class="offcanvas-header">
-                    <a href="index.html" class="nav-link">
+                    <a href="./my-little-world/index-little-world.html" class="nav-link">
                         <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
                             <strong>Меню</strong>
                         </h5>
@@ -114,10 +114,11 @@
         </div>
     </nav>
     <!-- Naavigation end -->
+
     <!-- О дизайнере -->
     <div class="container py-5">
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-6 py-3">
                 <div id="carouselExampleDark" class="container-fluid carousel carousel-dark slide px-0"
                     data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -130,24 +131,27 @@
                     </div>
 
                     <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="4000">
+                        <div class="carousel-item active my-photo-carusel" data-bs-interval="4000">
                             <div class="row">
                                 <div class="col p-0 my-photo-carusel">
-                                    <img src="../my-little-world/photo/photo1.jpeg" class="d-block w-100" alt="..." />
+                                    <img src="../my-little-world/photo/photo1.jpeg" class="d-block w-100 rounded"
+                                        alt="..." />
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="4000">
                             <div class="row">
                                 <div class="col p-0 my-photo-carusel">
-                                    <img src="../my-little-world/photo/photo2.jpeg" class="d-block w-100" alt="..." />
+                                    <img src="../my-little-world/photo/photo2.jpeg" class="d-block w-100 rounded"
+                                        alt="..." />
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="4000">
                             <div class="row">
                                 <div class="col p-0 my-photo-carusel">
-                                    <img src="../my-little-world/photo/photo4.jpeg" class="d-block w-100" alt="..." />
+                                    <img src="../my-little-world/photo/photo4.jpeg" class="d-block w-100 rounded"
+                                        alt="..." />
                                 </div>
                             </div>
                         </div>
@@ -166,342 +170,514 @@
             </div>
             <!-- конец фотографий дизайнера -->
             <!-- Описание дизайнера -->
-            <div class="col-lg-4">
-                <h1 class="item-title text-center">Хидэо Кодзима</h1>
-                <span class="item-brand card text-center py-2">4 курс Московского Дизайнерского</span>
-                <p>
-                    Хидэо Кодзи́ма — японский геймдизайнер, геймдиректор, сценарист,
-                    продюсер и актёр. Кодзима известен своеобразным авторским подходом к
-                    созданию игр; ещё до прихода в игровую индустрию он увлекался
-                    литературой и кинематографом и позже рассматривал разработку игр как
-                    новую возможность для художественного творчества
-                </p>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="h-100 p-5 text-white bg-dark rounded-3">
-                            <h2>Дизайнер modern-гиперпанк</h2>
-                            <p>
-                                В основном я занимаюсь одеждой и тем самым самовыражаюсь <br>
-                                В моем портфолио также есть картины и росписи стен, если понравился арт - то обязательно
-                                напиши в обсуждения.<br>
-                                Так же не забудь подписаться на мои обновления в ВК и Telegram
-                            </p>
-                            <div class="text-center ">
-
-                                <a href="#" target="_blank" class="btn btn-outline-light">ВКонтакте</a>
-                                <a href="#" target="_blank" class="btn btn-outline-info ">Telegram</a>
-                                <a href="#" target="_blank" class="btn btn-outline-info ">Добавить в интересные</a>
-                            </div>
+            <div class="col-lg-6">
+                <div class="lead">Дизайнер</div>
+                <h1 class="item-title text-center border-top border-bottom">Хидэо Кодзима</h1>
+                <figure class="text-end">
+                    <blockquote class="blockquote">
+                        <p>Здесь могла быть какаято очкень крутая фраза</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Но я ее забыл
+                    </figcaption>
+                </figure>
+                <div class="bg-light">
+                    <br>
+                </div>
+                <div class="row py-2">
+                    <div class="col-4">
+                        <div class="list-group" id="list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active" id="list-home-list"
+                                data-bs-toggle="list" href="#list-home" role="tab" aria-controls="home">О дизайнере</a>
+                            <a class="list-group-item list-group-item-action" id="list-profile-list"
+                                data-bs-toggle="list" href="#list-profile" role="tab"
+                                aria-controls="profile">Заслуги</a>
+                            <a class="list-group-item list-group-item-action" id="list-messages-list"
+                                data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Идея</a>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                                aria-labelledby="list-home-list">Я японский геймдизайнер, геймдиректор, сценарист,
+                                продюсер и актёр, известен своеобразным авторским подходом к созданию игр. Ещё до
+                                прихода в игровую индустрию увлекался литературой и кинематографом и позже рассматривал
+                                разработку игр как новую возможность для художественного творчества.</div>
+                            <div class="tab-pane fade" id="list-profile" role="tabpanel"
+                                aria-labelledby="list-profile-list"> Премия BAFTA — Приз человеку года, The Game Award -
+                                Industry Icon Award</div>
+                            <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                                aria-labelledby="list-messages-list">Считаю стелс-игры крутыми и люблю серию Metal Gear
+                                Solid</div>
                         </div>
                     </div>
                 </div>
+                <div class="bg-light">
+                    <br>
+                </div>
+                <blockquote class="blockquote py-2">
+                    <p>Email сотрудничества:</p>
+                </blockquote>
+                <div class="text-end border-bottom ">
+                    <div class="btn-group text-center">
+                        <a href="#" class="btn btn-dark active" aria-current="page">Менеджер</a>
+                        <a href="#" class="btn btn-dark">Личная почта</a>
+                    </div>
+                </div>
+                <blockquote class="blockquote py-2">
+                    <p>Мои социальные сети:</p>
+                </blockquote>
+                <div class="text-end border-bottom ">
+                    <div class="btn-group text-center">
+                        <a href="#" class="btn btn-dark active" aria-current="page">Telegram</a>
+                        <a href="#" class="btn btn-dark">ВК</a>
+                        <a href="#" class="btn btn-dark">Instargram</a>
+                    </div>
+                </div>
+                <blockquote class="blockquote py-2">
+                    <p>Мои видео:</p>
+                </blockquote>
+                <div class="text-end border-bottom ">
+                    <div class="btn-group text-center">
+                        <a href="#" class="btn btn-dark active" aria-current="page">YouTub</a>
+                        <a href="#" class="btn btn-dark">TikTok</a>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
     <!-- Альбом -->
-    <div class="album py-5 bg-light">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <div class="col">
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100"
-                                src="../my-little-world/photo/portfolio-1.jpeg" aria-label="Заполнитель: Миниатюра"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            </img>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <font style="vertical-align: inherit">
-                                        <font style="vertical-align: inherit">Это более широкая карточка со
-                                            вспомогательным
-                                            текстом
-                                            ниже, который является естественным переходом к
-                                            дополнительному контенту. </font>
-                                        <font style="vertical-align: inherit">Этот контент немного длиннее.</font>
-                                    </font>
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a class="btn btn-outline-secondary" href="">Вид</a>
-                                        <a class="btn btn-secondary" href="">Редактировать</a>
-                                    </div>
-                                    <small class="text-muted">
-                                        <font style="vertical-align: inherit">
-                                            <font style="vertical-align: inherit">9 минут</font>
-                                        </font>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="text-center ">
+        <h1 class="display-6"><strong>Мои работы</strong></h1>
+    </div>
+    <div class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Актуальные</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Прошлые
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+                <div class="album py-5 bg-light">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-                <div class="col">
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100"
-                                src="../my-little-world/photo/portfolio-1.jpeg" aria-label="Заполнитель: Миниатюра"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            </img>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <font style="vertical-align: inherit">
-                                        <font style="vertical-align: inherit">Это более широкая карточка со
-                                            вспомогательным
-                                            текстом
-                                            ниже, который является естественным переходом к
-                                            дополнительному контенту. </font>
-                                        <font style="vertical-align: inherit">Этот контент немного длиннее.</font>
-                                    </font>
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a class="btn btn-outline-secondary" href="">Вид</a>
-                                        <a class="btn btn-secondary" href="">Редактировать</a>
-                                    </div>
-                                    <small class="text-muted">
-                                        <font style="vertical-align: inherit">
-                                            <font style="vertical-align: inherit">9 минут</font>
-                                        </font>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top" width="100"
+                                        src="../my-little-world/photo/portfolio-1.jpeg"
+                                        aria-label="Заполнитель: Миниатюра" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
 
-                <div class="col">
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100"
-                                src="../my-little-world/photo/portfolio-1.jpeg" aria-label="Заполнитель: Миниатюра"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            </img>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <font style="vertical-align: inherit">
-                                        <font style="vertical-align: inherit">Это более широкая карточка со
-                                            вспомогательным
-                                            текстом
-                                            ниже, который является естественным переходом к
-                                            дополнительному контенту. </font>
-                                        <font style="vertical-align: inherit">Этот контент немного длиннее.</font>
-                                    </font>
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a class="btn btn-outline-secondary" href="">Вид</a>
-                                        <a class="btn btn-secondary" href="">Редактировать</a>
-                                    </div>
-                                    <small class="text-muted">
-                                        <font style="vertical-align: inherit">
-                                            <font style="vertical-align: inherit">9 минут</font>
-                                        </font>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                    </img>
+                                    <div class="card-body">
+                                        <h5 class="card-title">БИЧ</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Corrupti dicta inventore rem minus consequatur neque debitis
+                                            dignissimos autem odit dolorum.
+                                        </p>
 
-                <div class="col">
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100"
-                                src="../my-little-world/photo/portfolio-1.jpeg" aria-label="Заполнитель: Миниатюра"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            </img>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <font style="vertical-align: inherit">
-                                        <font style="vertical-align: inherit">Это более широкая карточка со
-                                            вспомогательным
-                                            текстом
-                                            ниже, который является естественным переходом к
-                                            дополнительному контенту. </font>
-                                        <font style="vertical-align: inherit">Этот контент немного длиннее.</font>
-                                    </font>
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a class="btn btn-outline-secondary" href="">Вид</a>
-                                        <a class="btn btn-secondary" href="">Редактировать</a>
-                                    </div>
-                                    <small class="text-muted">
-                                        <font style="vertical-align: inherit">
-                                            <font style="vertical-align: inherit">9 минут</font>
-                                        </font>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col">
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100"
-                                src="../my-little-world/photo/portfolio-1.jpeg" aria-label="Заполнитель: Миниатюра"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            </img>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <font style="vertical-align: inherit">
-                                        <font style="vertical-align: inherit">Это более широкая карточка со
-                                            вспомогательным
-                                            текстом
-                                            ниже, который является естественным переходом к
-                                            дополнительному контенту. </font>
-                                        <font style="vertical-align: inherit">Этот контент немного длиннее.</font>
-                                    </font>
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a class="btn btn-outline-secondary" href="">Вид</a>
-                                        <a class="btn btn-secondary" href="">Редактировать</a>
+                                        <a href="../my-little-world/page-card-little-world.html" target="_blank"
+                                            class="btn btn-outline-secondary">Купить</a>
                                     </div>
-                                    <small class="text-muted">
-                                        <font style="vertical-align: inherit">
-                                            <font style="vertical-align: inherit">9 минут</font>
-                                        </font>
-                                    </small>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col">
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100"
-                                src="../my-little-world/photo/portfolio-1.jpeg" aria-label="Заполнитель: Миниатюра"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            </img>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <font style="vertical-align: inherit">
-                                        <font style="vertical-align: inherit">Это более широкая карточка со
-                                            вспомогательным
-                                            текстом
-                                            ниже, который является естественным переходом к
-                                            дополнительному контенту. </font>
-                                        <font style="vertical-align: inherit">Этот контент немного длиннее.</font>
-                                    </font>
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a class="btn btn-outline-secondary" href="">Вид</a>
-                                        <a class="btn btn-secondary" href="">Редактировать</a>
+
+
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top" width="100"
+                                        src="../my-little-world/photo/portfolio-1.jpeg"
+                                        aria-label="Заполнитель: Миниатюра" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+
+                                    </img>
+                                    <div class="card-body">
+                                        <h5 class="card-title">БИЧ</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Corrupti dicta inventore rem minus consequatur neque debitis
+                                            dignissimos autem odit dolorum.
+                                        </p>
+
+
+                                        <a href="../my-little-world/page-card-little-world.html" target="_blank"
+                                            class="btn btn-outline-secondary">Купить</a>
                                     </div>
-                                    <small class="text-muted">
-                                        <font style="vertical-align: inherit">
-                                            <font style="vertical-align: inherit">9 минут</font>
-                                        </font>
-                                    </small>
                                 </div>
                             </div>
+
+
+
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top" width="100"
+                                        src="../my-little-world/photo/portfolio-1.jpeg"
+                                        aria-label="Заполнитель: Миниатюра" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+
+                                    </img>
+                                    <div class="card-body">
+                                        <h5 class="card-title">БИЧ</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Corrupti dicta inventore rem minus consequatur neque debitis
+                                            dignissimos autem odit dolorum.
+                                        </p>
+
+
+                                        <a href="../my-little-world/page-card-little-world.html" target="_blank"
+                                            class="btn btn-outline-secondary">Купить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top" width="100"
+                                        src="../my-little-world/photo/portfolio-1.jpeg"
+                                        aria-label="Заполнитель: Миниатюра" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+
+                                    </img>
+                                    <div class="card-body">
+                                        <h5 class="card-title">БИЧ</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Corrupti dicta inventore rem minus consequatur neque debitis
+                                            dignissimos autem odit dolorum.
+                                        </p>
+
+
+                                        <a href="../my-little-world/page-card-little-world.html" target="_blank"
+                                            class="btn btn-outline-secondary">Купить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top" width="100"
+                                        src="../my-little-world/photo/portfolio-1.jpeg"
+                                        aria-label="Заполнитель: Миниатюра" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+
+                                    </img>
+                                    <div class="card-body">
+                                        <h5 class="card-title">БИЧ</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Corrupti dicta inventore rem minus consequatur neque debitis
+                                            dignissimos autem odit dolorum.
+                                        </p>
+
+
+                                        <a href="../my-little-world/page-card-little-world.html" target="_blank"
+                                            class="btn btn-outline-secondary">Купить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top" width="100"
+                                        src="../my-little-world/photo/portfolio-1.jpeg"
+                                        aria-label="Заполнитель: Миниатюра" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+
+                                    </img>
+                                    <div class="card-body">
+                                        <h5 class="card-title">БИЧ</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Corrupti dicta inventore rem minus consequatur neque debitis
+                                            dignissimos autem odit dolorum.
+                                        </p>
+
+
+                                        <a href="../my-little-world/page-card-little-world.html" target="_blank"
+                                            class="btn btn-outline-secondary">Купить</a>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
+
                 </div>
             </div>
-        </div>
-        <!-- footer -->
-        <div class="container">
-            <footer class="border-top">
-                <h5 class="text-center py-3">Подробнее</h5>
-                <div class="row text-center py-3">
-                    <div class="col-12 col-md-4 mb-3">
-                        <ul class="nav flex-column">
-                            <li class="nav-item mb-2">
-                                <a href="#" class="nav-link p-0 text-muted">О нас</a>
-                            </li>
-                            <li class="nav-item mb-2">
-                                <a class="link-dark" href="https://twitter.com/?lang=ru" target="_blank"><i
-                                        class="fa-brands fa-twitter"></i></a>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="album py-5 bg-light">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-                                <a class="link-dark" href="https://vk.com/" target="_blank"><i
-                                        class="fa-brands fa-vk"></i></a>
-                                <a class="link-dark" href="https://www.instagram.com/" target="_blank"><i
-                                        class="fa-brands fa-instagram"></i></a>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top" width="100"
+                                        src="../my-little-world/photo/portfolio-1.jpeg"
+                                        aria-label="Заполнитель: Миниатюра" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
 
-                                <a class="link-dark" href="https://github.com/VladimirSemchishin" target="_blank"><i
-                                        class="fa-brands fa-github"></i></a>
-                            </li>
-                        </ul>
+                                    </img>
+                                    <div class="card-body">
+                                        <h5 class="card-title">БИЧ</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Corrupti dicta inventore rem minus consequatur neque debitis
+                                            dignissimos autem odit dolorum.
+                                        </p>
+
+
+                                        <a href="../my-little-world/page-card-little-world.html" target="_blank"
+                                            class="btn btn-outline-secondary">Узнать больше</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top" width="100"
+                                        src="../my-little-world/photo/portfolio-1.jpeg"
+                                        aria-label="Заполнитель: Миниатюра" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+
+                                    </img>
+                                    <div class="card-body">
+                                        <h5 class="card-title">БИЧ</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Corrupti dicta inventore rem minus consequatur neque debitis
+                                            dignissimos autem odit dolorum.
+                                        </p>
+
+
+                                        <a href="../my-little-world/page-card-little-world.html" target="_blank"
+                                            class="btn btn-outline-secondary">Узнать больше</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top" width="100"
+                                        src="../my-little-world/photo/portfolio-1.jpeg"
+                                        aria-label="Заполнитель: Миниатюра" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+
+                                    </img>
+                                    <div class="card-body">
+                                        <h5 class="card-title">БИЧ</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Corrupti dicta inventore rem minus consequatur neque debitis
+                                            dignissimos autem odit dolorum.
+                                        </p>
+
+
+                                        <a href="../my-little-world/page-card-little-world.html" target="_blank"
+                                            class="btn btn-outline-secondary">Узнать больше</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top" width="100"
+                                        src="../my-little-world/photo/portfolio-1.jpeg"
+                                        aria-label="Заполнитель: Миниатюра" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+
+                                    </img>
+                                    <div class="card-body">
+                                        <h5 class="card-title">БИЧ</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Corrupti dicta inventore rem minus consequatur neque debitis
+                                            dignissimos autem odit dolorum.
+                                        </p>
+
+
+                                        <a href="../my-little-world/page-card-little-world.html" target="_blank"
+                                            class="btn btn-outline-secondary">Узнать больше</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top" width="100"
+                                        src="../my-little-world/photo/portfolio-1.jpeg"
+                                        aria-label="Заполнитель: Миниатюра" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+
+                                    </img>
+                                    <div class="card-body">
+                                        <h5 class="card-title">БИЧ</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Corrupti dicta inventore rem minus consequatur neque debitis
+                                            dignissimos autem odit dolorum.
+                                        </p>
+
+
+                                        <a href="../my-little-world/page-card-little-world.html" target="_blank"
+                                            class="btn btn-outline-secondary">Узнать больше</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top" width="100"
+                                        src="../my-little-world/photo/portfolio-1.jpeg"
+                                        aria-label="Заполнитель: Миниатюра" preserveAspectRatio="xMidYMid slice"
+                                        focusable="false">
+
+                                    </img>
+                                    <div class="card-body">
+                                        <h5 class="card-title">БИЧ</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Corrupti dicta inventore rem minus consequatur neque debitis
+                                            dignissimos autem odit dolorum.
+                                        </p>
+
+
+                                        <a href="../my-little-world/page-card-little-world.html" target="_blank"
+                                            class="btn btn-outline-secondary">Узнать больше</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
 
-                    <div class="col-12 col-md-4 mb-3 col-sm-4">
-                        <ul class="nav flex-column">
-                            <li class="nav-item mb-2">
-                                <a href="#" class="nav-link p-0 text-muted">Контакты</a>
-                            </li>
-                            <li class="nav-item mb-2">
-                                <a class="link-dark" href="https://twitter.com/?lang=ru" target="_blank"><i
-                                        class="fa-brands fa-twitter"></i></a>
-
-                                <a class="link-dark" href="https://vk.com/" target="_blank"><i
-                                        class="fa-brands fa-vk"></i></a>
-                                <a class="link-dark" href="https://www.instagram.com/" target="_blank"><i
-                                        class="fa-brands fa-instagram"></i></a>
-
-                                <a class="link-dark" href="https://github.com/VladimirSemchishin" target="_blank"><i
-                                        class="fa-brands fa-github"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-12 col-md-4 mb-3">
-                        <h5><br /></h5>
-                        <ul class="nav flex-column">
-                            <li class="nav-item mb-2">
-                                <a href="#" class="nav-link p-0 text-muted">Рассылка</a>
-                            </li>
-                            <li class="nav-item mb-2">
-                                <a class="link-dark" href="https://twitter.com/?lang=ru" target="_blank"><i
-                                        class="fa-brands fa-twitter"></i></a>
-
-                                <a class="link-dark" href="https://vk.com/" target="_blank"><i
-                                        class="fa-brands fa-vk"></i></a>
-                                <a class="link-dark" href="https://www.instagram.com/" target="_blank"><i
-                                        class="fa-brands fa-instagram"></i></a>
-
-                                <a class="link-dark" href="https://github.com/VladimirSemchishin" target="_blank"><i
-                                        class="fa-brands fa-github"></i></a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
+            </div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                ...
+            </div>
+        </div>
+    </div>
 
-                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                    <p>© 2022 Company, Inc. All rights reserved.</p>
-                    <ul class="list-unstyled d-flex">
-                        <li class="ms-3">
-                            <!-- VK -->
-                            <a class="link-dark" href="https://vk.com/" target="_blank"><i
-                                    class="fa-brands fa-vk"></i></a>
+    <!-- footer -->
+    <div class="container">
+        <footer class="border-top">
+            <h5 class="text-center py-3">Подробнее</h5>
+            <div class="row text-center py-3">
+                <div class="col-12 col-md-4 mb-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted">О нас</a>
                         </li>
-                        <li class="ms-3">
-                            <!-- Inst -->
-                            <a class="link-dark" href="https://www.instagram.com/" target="_blank"><i
-                                    class="fa-brands fa-instagram"></i></a>
-                        </li>
-                        <li class="ms-3">
-                            <!-- Twitter -->
+                        <li class="nav-item mb-2">
                             <a class="link-dark" href="https://twitter.com/?lang=ru" target="_blank"><i
                                     class="fa-brands fa-twitter"></i></a>
+
+                            <a class="link-dark" href="https://vk.com/" target="_blank"><i
+                                    class="fa-brands fa-vk"></i></a>
+                            <a class="link-dark" href="https://www.instagram.com/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+
+                            <a class="link-dark" href="https://github.com/VladimirSemchishin" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
                         </li>
                     </ul>
                 </div>
-            </footer>
-        </div>
+
+                <div class="col-12 col-md-4 mb-3 col-sm-4">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted">Контакты</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="link-dark" href="https://twitter.com/?lang=ru" target="_blank"><i
+                                    class="fa-brands fa-twitter"></i></a>
+
+                            <a class="link-dark" href="https://vk.com/" target="_blank"><i
+                                    class="fa-brands fa-vk"></i></a>
+                            <a class="link-dark" href="https://www.instagram.com/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+
+                            <a class="link-dark" href="https://github.com/VladimirSemchishin" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-4 mb-3">
+                    <h5><br /></h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted">Рассылка</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="link-dark" href="https://twitter.com/?lang=ru" target="_blank"><i
+                                    class="fa-brands fa-twitter"></i></a>
+
+                            <a class="link-dark" href="https://vk.com/" target="_blank"><i
+                                    class="fa-brands fa-vk"></i></a>
+                            <a class="link-dark" href="https://www.instagram.com/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+
+                            <a class="link-dark" href="https://github.com/VladimirSemchishin" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2022 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3">
+                        <!-- VK -->
+                        <a class="link-dark" href="https://vk.com/" target="_blank"><i class="fa-brands fa-vk"></i></a>
+                    </li>
+                    <li class="ms-3">
+                        <!-- Inst -->
+                        <a class="link-dark" href="https://www.instagram.com/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="ms-3">
+                        <!-- Twitter -->
+                        <a class="link-dark" href="https://twitter.com/?lang=ru" target="_blank"><i
+                                class="fa-brands fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script> -->
 </body>
 
 </html>
